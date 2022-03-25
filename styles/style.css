@@ -316,7 +316,7 @@
   width: 90%;
   margin: 0 auto;
   padding-top: 60px;
-  padding-bottom: 40px;	
+  padding-bottom: 40px;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -365,7 +365,7 @@
 
 .footer__column-heading {
   margin: 0;
-  line-height: 30x;
+  line-height: 30px;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
@@ -379,7 +379,7 @@
   padding-top: 20px;
   padding-bottom: 16px;
   padding-left: 0;
-  line-height: 30x;
+  line-height: 30px;
   color: #fff;
   font-size: 18px;
   font-weight: normal;
