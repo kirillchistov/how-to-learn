@@ -260,20 +260,17 @@
   position: relative;
   overflow: hidden;
   padding-bottom: 90px;
-  border: 1px solid red;
 }
 
 .section-title_theme_dark {
   color: #fff;
   position: relative;
   margin: 0 auto;
-  border: 1px solid red;
   padding-top: 90px;
 }
 
 .section-subtitle_theme_dark {
   color: #fff;
-  border: 1px solid red;
 }
 
 .kaufman__triangle {
@@ -281,7 +278,6 @@
   height: 877px;
   margin: 0;
   position: absolute;
-  border: 1px solid red;
   top: 0;
   right: -210px;
   background-image: url('../images/kaufman-triangle.svg');
@@ -292,7 +288,6 @@
 
 .table_theme_dark {
   color: #fff;
-  border: 1px solid red;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
@@ -302,7 +297,6 @@
 
 .table__cell_theme_dark {
   color: #fff;
-  border: 1px solid red;
   padding-top: 80px;
   width: 200px;
   z-index: 5;
@@ -311,7 +305,6 @@
 .table__heading_theme_dark {
   padding: 0;
   color: #fff;
-  border: 1px solid red;
 }
 
 .table__text_theme_dark {
@@ -321,7 +314,6 @@
 .footer {
   background-color: #1f1f1f;
   position: relative;
-  border: 1px solid red;
   margin: 0;
   padding-top: 60px;
   padding-bottom: 40px;
@@ -330,7 +322,6 @@
 .footer__columns {
   width: 90%;
   min-height: 350px;
-  border: 1px solid red;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -340,11 +331,9 @@
 .footer__column {
   margin: 0;
   color: #fff;
-  border: 1px solid red;
 }
 
 .footer__column_content_copyright {
-  border: 1px solid red;
   right: 0;
   display: flex;
   flex-direction: column;
@@ -362,7 +351,6 @@
 }
 
 .footer__author {
-  border: 1px solid red;
   margin: 0;
   line-height: 25px;
   text-align: left;
@@ -374,7 +362,6 @@
 }
 
 .footer__column_content_info {
-  border: 1px solid red;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
@@ -382,7 +369,6 @@
 }
 
 .footer__column-heading {
-  border: 1px solid red;
   margin: 0;
   line-height: 30px;
   color: #fff;
@@ -391,7 +377,6 @@
 }
 
 .footer__column-links {
-  border: 1px solid red;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -407,7 +392,6 @@
 }
 
 .footer__column-list {
-  border: 1px solid red;
   margin: 0;
   color: #fff;
   padding: 0;
