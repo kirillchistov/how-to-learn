@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     width: 620px;
-    height: 608px; 
+    height: 608px;
     background-image: url('/../../../images/khan-book.jpg');
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: cover;
-  /* Для варианта картинка 
+  /* Для варианта картинка
     object-fit: cover;
     border: none;
-  */  
+  */
   }
