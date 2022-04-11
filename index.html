@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Научиться учиться</title>
-    <link rel="stylesheet" href="../pages/index.css">
+    <link rel="stylesheet" href="./pages/index.css">
   </head>
   <body>
     <div class="root">
       <header class="header">
-        <a href="#"><img src="../images/logo_place_header.svg" alt="Лого Яндекс Практикум"
+        <a href="#"><img src="./images/logo_place_header.svg" alt="Лого Яндекс Практикум"
           class="logo logo_place_header"></a>
         <h1 class="header__title">Научиться учиться</h1>
         <p class="header__subtitle">
@@ -43,44 +43,36 @@
           <p class="section-subtitle">Пять практик от Барбары Оакли</p>
           <ul class="cards">
             <li class="cards__item">
-              <img src="../images/cards-attention.png" class="cards__image" alt="Два вида внимания" title="Два вида внимания">
+              <img src="./images/cards-attention.png" class="cards__image" alt="Два вида внимания" title="Два вида внимания">
               <h3 class="cards__title">Два вида внимания</h3>
               <p class="cards__description">Глубокие знания возникают, 
                 если чередовать сфокусированное и рассеянное мышление.</p>
             </li>
             <li class="cards__item">
-              <img src="../images/cards-recall.png" class="cards__image" alt="Вспоминайте изученное" title="Вспоминайте изученное">
+              <img src="./images/cards-recall.png" class="cards__image" alt="Вспоминайте изученное" title="Вспоминайте изученное">
               <h3 class="cards__title">Recall</h3>
               <p class="cards__description">Вспоминайте изученное — 
                 это позволит соединить разрозненные порции памяти.</p>
             </li>
             <li class="cards__item">
-              <img src="../images/cards-interliving.png" class="cards__image" alt="Интерливинг" title="Интерливинг">
+              <img src="./images/cards-interliving.png" class="cards__image" alt="Интерливинг" title="Интерливинг">
               <h3 class="cards__title">Интерливинг</h3>
               <p class="cards__description">Изучайте несколько навыков одновременно, 
                 они обогащают друг друга.</p>
             </li>
             <li class="cards__item">
-              <img src="../images/cards-question.png" class="cards__image" alt="Вопросы" title="Вопросы">
+              <img src="./images/cards-question.png" class="cards__image" alt="Вопросы" title="Вопросы">
               <h3 class="cards__title">Вопросы</h3>
               <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, 
                 который вас действительно волнует.</p>
             </li>
             <li class="cards__item">
-              <img src="../images/cards-competence.png" class="cards__image" alt="Иллюзия компетентности" title="Иллюзия компетентности">
+              <img src="./images/cards-competence.png" class="cards__image" alt="Иллюзия компетентности" title="Иллюзия компетентности">
               <h3 class="cards__title">Иллюзия компетентности</h3>
               <p class="cards__description">Повторите про себя, запишите, расскажите другу: 
                 вам только кажется, что вы владеете новой темой.</p>
             </li>
-            <!-- этот костыль заменил на псевдоэлемент по аналогии с ПР1 -->
-<!--
-
-            <li class="cards__item">
-              
-              <h3 class="cards__title"></h3>
-              <p class="cards__description"></p>
-            </li>
--->
+            <!-- костыль с 6 карточкой заменил на псевдоэлемент по аналогии с ПР1 -->
           </ul>
         </section>
        
@@ -89,13 +81,13 @@
           <h2 class="section-title">Видео нa TED</h2>
           <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
           <ul class="video__iframes">
-            <li class="video__iframe">
-              <iframe width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU?controls=0" 
-              title="Видео. Тим Урбан: Что в голове у мастер-прокрастинатора" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </li>
-            <li class="video__iframe">
-              <iframe width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY?controls=0" 
+            <li class="video__item">
+              <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY?controls=0" 
               title="Видео. Джош Кауфман: Как научиться чему угодно. Первые 20 часов" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+            <li class="video__item">
+              <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU?controls=0" 
+              title="Видео. Тим Урбан: Что в голове у мастер-прокрастинатора" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </li>
           </ul>
         </section>
@@ -177,7 +169,7 @@
               <div class="khan__book-pic" title="Салман Хан. Весь мир - школа">
               <!-- Для варианта обложка картинкой
               <a href="#">
-              <img class="resources__logo" src="../images/khan-book.jpg" alt="Салман Хан. Весь мир - школа"></a>
+              <img class="resources__logo" src="./images/khan-book.jpg" alt="Салман Хан. Весь мир - школа"></a>
               </a>
               -->                
               </div>
@@ -240,16 +232,16 @@
           <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
           <ul class="resources__logo-zone">
             <li class="resources__link">
-              <a href="#"><img class="resources__logo" src="../images/logo/resources-arzamas.svg" alt="Радио Арзамас"></a>
+              <a href="#"><img class="resources__logo" src="./images/logo/resources-arzamas.svg" alt="Радио Арзамас"></a>
             </li>
             <li class="resources__link">
-              <a href="#"><img class="resources__logo" src="../images/logo/resources-n1.svg" alt="Эн плюс один"></a>
+              <a href="#"><img class="resources__logo" src="./images/logo/resources-n1.svg" alt="Эн плюс один"></a>
             </li>
             <li class="resources__link">
-              <a href="#"><img class="resources__logo" src="../images/logo/resources-strelka.svg" alt="Стрелка"></a>
+              <a href="#"><img class="resources__logo" src="./images/logo/resources-strelka.svg" alt="Стрелка"></a>
             </li>
             <li class="resources__link">
-              <a href="#"><img class="resources__logo" src="../images/logo/resources-polka.svg" alt="Полка"></a>
+              <a href="#"><img class="resources__logo" src="./images/logo/resources-polka.svg" alt="Полка"></a>
             </li>
           </ul>
         </section>

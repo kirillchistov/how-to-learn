@@ -2,7 +2,7 @@
     margin: 0 auto;
     min-height: 890px;
     position: relative;
-    background-image: url('/../../images/feynman.png');
+    background-image: url('../../images/feynman.png');
     background-repeat: no-repeat;
     background-position: left bottom;
     background-color: #f2f2f2;
