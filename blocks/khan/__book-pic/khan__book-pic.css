@@ -1,9 +1,10 @@
 .khan__book-pic {
-    margin: 0;
-    width: 620px;
-    height: 608px;
-    object-fit: cover;
-    object-position: bottom;
-    border: none;
-    padding: 0;
-  }
+  margin: 0;
+  width: 620px;
+  height: 608px;
+  object-fit: cover;
+  object-position: top;
+/*  overflow: hidden; */
+  border: none;
+  padding: 0;
+}
