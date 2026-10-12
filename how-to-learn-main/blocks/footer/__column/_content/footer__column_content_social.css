@@ -1,0 +1,9 @@
+.footer__column_content_social {
+    list-style: none;
+    margin: 0;
+    padding-bottom: 16px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+}

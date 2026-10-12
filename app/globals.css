@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-sans);
+}
+
+body {
+  font-family: var(--font-sans), sans-serif;
+}
+
+@keyframes landing-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.landing-spin {
+  animation: landing-spin 20s linear infinite;
+}

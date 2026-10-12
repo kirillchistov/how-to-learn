@@ -1,0 +1,72 @@
+name: Radar drafts
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: radar-drafts
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Collect drafts
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "OPENAI_API_KEY не задан. Сбор остановлен."
+            exit 0
+          fi
+          npm run ingest
+
+      - name: Open pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -z "$(git status --porcelain content/radar)" ]; then
+            echo "Новых черновиков нет."
+            exit 0
+          fi
+
+          branch="radar/drafts-$(date -u +%Y%m%d-%H%M%S)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add content/radar
+          git commit -m "Add radar drafts for review"
+          git push --set-upstream origin "$branch"
+          gh pr create --title "Черновики радара $(date -u +%F)" --body "$(cat <<'EOF'
+## Что внутри
+
+Новые черновики в `content/radar`. На сайте они скрыты, пока в файле стоит `status: draft`.
+
+## Как опубликовать
+
+- Прочитать заметку и поправить формулировки.
+- Поставить `status: published`.
+- Смержить запрос.
+
+EOF
+)"
